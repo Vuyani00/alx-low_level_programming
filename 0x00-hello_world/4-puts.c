@@ -6,6 +6,8 @@
   */
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle);
+	/*By default the newline character is included*/
+	/*Backwards slash is added so compiler can ignore special character "*/
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
