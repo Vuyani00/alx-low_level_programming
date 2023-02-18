@@ -3,7 +3,8 @@
 #include <time.h>
 /* more headers goes there */
 
-/**main - Entry point
+/**
+ *main - Entry point
  * Description: A simple C program that calculate the last digit of n,
  * then check if is greater than 5, or equals 0, or less than 6 but not 0.
  *Return: always 0 (Success)
@@ -23,7 +24,7 @@ int main(void)
 	}
 	else if (last == 0)
 	{
-		printf("Last digit of %i is %i and is zero\n", n, last);
+		printf("Last digit of %i is %i and is 0\n", n, last);
 	}
 	else if (last < 6 && last != 0)
 	{
