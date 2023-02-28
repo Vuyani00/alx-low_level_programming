@@ -13,18 +13,23 @@
 int print_last_digit(int n)
 {
 	int num;
+	int i = 0;
 
-	if (n > 0)
+	while (i < 2)
 	{
-		num = n % 10;
-	}
-	else if (n == 0)
-	{
-		num = 0;
-	}
-	else if (n < 0)
-	{
-		num = n % 10;
+		if (n > 0)
+		{
+			num = n % 10;
+		}
+		else if (n == 0)
+		{
+			num = 0;
+		}
+		else if (n < 0)
+		{
+			num = n % 10;
+		}
+		i++;
 	}
 
 	return (num);
