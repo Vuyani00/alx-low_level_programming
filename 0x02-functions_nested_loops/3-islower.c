@@ -4,6 +4,8 @@
 /**
   *_islower - checks for lowercase letters
   *
+  *@c: character
+  *
   *Descrption: checks whether a character is lowercase/uppercase
   *
   *Return: 0 (Success)
