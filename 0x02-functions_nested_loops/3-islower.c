@@ -11,15 +11,14 @@
 
 int _islower(int c)
 {
-	char alpha;
-	/*c - integer*/
-	int c = 0;
-
-	if (islower(alpha) > c)
+	char i;
+	int lower = 0;
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		return (1);
-	} else if (alpha == c)
-	{
-		return (0);
+		if (i == c)
+		{
+			lower = 1;
+		}
 	}
+	return (lower);
 }
