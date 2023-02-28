@@ -11,13 +11,16 @@ int _isalpha(int c)
 
 {
 	char i;
-	int alpha = 1;
+	int alpha;
 
 	for (i = 'a'; i <= 'Z'; i++)
 	{
 		if (i == c)
 		{
 			alpha = 1;
+		} else if (i != c)
+		{
+			alpha = 0;
 		}
 	}
 	return (alpha);
