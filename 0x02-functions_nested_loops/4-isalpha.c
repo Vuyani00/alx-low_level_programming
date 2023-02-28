@@ -1,4 +1,4 @@
-#include "main.h"
+#include <main.h>
 
 /**
  * _isalpha - is found on the main
@@ -8,17 +8,17 @@
  */
 
 int _isalpha(int c)
-
 {
-	char i;
-	int alpha;
-
-	for (i = 'a'; i <= 'Z'; i++)
+	char lower, upper;
+	int isletter = 0;
+	
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
-		if (i == c)
+		for (upper = 'A'; upper <= 'Z'; upper++)
 		{
-			alpha = 1;
+			if (c == lower || c == upper)
+			isletter = 1;
 		}
 	}
-	return (alpha);
+	return (isletter);
 }
