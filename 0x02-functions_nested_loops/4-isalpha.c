@@ -11,7 +11,7 @@ int _isalpha(int c)
 
 {
 	char i;
-	int alpha = 0;
+	int alpha = 1;
 
 	for (i = 'a'; i <= 'Z'; i++)
 	{
